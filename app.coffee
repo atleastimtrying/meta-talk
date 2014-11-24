@@ -10,13 +10,14 @@ class App
 		$(section).hide() for section in @sections
 		$(@sections[@position]).show()
 
-	randomhsla: -> "hsla(#{@roundom 360 },80%,30%, 1)"
+	randomhsla: -> "hsla(#{@roundom 360 },30%,90%, 1)"
 
 	roundom: (int)-> Math.ceil Math.random()*int
 	
 	setBackground: (section)-> $(section).css "background-color" : @randomhsla()
 
 	keypress: (event)=>
+		event.preventDefault()
 		if event.keyCode is 32
     	@changeSection 1
     else

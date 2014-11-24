@@ -1,448 +1,252 @@
-
 <!doctype html>  
 <html>
   <head>
-    <title>Coffeescript is for </title>
+    <title>History of FESuffolk</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
   </head>
   <body>
-    <header>
-      <h1>CoffeeScript is for </h1>
-    </header>
     <article>
       <section>
-        <h2>...</h2>
+        <h2>FESuffolk Meta Talk</h2>
         <ul>
-          <li>Anders Fisher 2014</li>
+          <li>Started in February 2012</li>
+          <li>60 talks</li>
+          <li>15 at the brewery tap</li>
+          <li>45 at UCS Waterfront</li>
+          <li>3 Socials</li>
         </ul>
       </section>
       <section>
-        <h2>a modern JS</h2>
-        <ul>
-          <li>Invented in 2009</li>
-          <li>Open source</li>
-          <li>Compiles to Javascript</li>
-          <li>Runs on node/ in the browser</li>
-          <li>Semantic Whitespace</li>
-          <li>Ruby like syntax</li>
-        </ul>
+        <h2>February 2012</h2>
+        <h3>Clever Selectors - Anders Fisher</h3>
+        <p>Structuring your CSS by Specificity can help improve your project</p>
       </section>
       <section>
-        <h2>functions</h2>
-<pre>
-helloWorld = -> 
-  alert "hello world!"
-
-helloWorld()
-</pre>
-          <p>compiles to</p>
-<pre>
-var helloWorld;
-
-helloWorld = function() {
-  return alert("hello world!");
-};
-
-helloWorld();
-</pre>
+        <h2>March 2012</h2>
+        <h3>CSS3D on iPad - Anders Fisher</h3>
+        <p>CSS3D is fiddly but a great way to add pizzaz on modern devices. </p>
+        <h3>Introduction to unity - Dan Higham</h3>
+        <p>unity is easier than you think, and you can get started today!</p>
       </section>
       <section>
-        <h2>functions</h2>
-        <ul>
-          <li>-> replaces function()</li>
-          <li>(argument)-> replaces function(argument)</li>
-          <li>functions can be single or multiline.</li>
-          <li>when calling functions brackets can be omitted (most of the time).</li>
-          <li>{} are ignored in favour of indentation</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>useful conditionals</h2>
-<pre>
-drinkCoffee() if anders is sleepy
-
-coffeeIsWarm = cold > coffeetemp > hot
-
-</pre>
-        <p>compiles to</p>
-<pre>
-var coffeeIsWarm;
-
-if (anders === sleepy) {
-  drinkCoffee();
-}
-
-coffeeIsWarm = (cold > coffeetemp && coffeetemp > hot);
-</pre>
-        <ul>
-          <li>if and unless allow one line statements.</li>
-          <li>conditions can be chained</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>iterations</h2>
-<pre>
-makeCoffeeFor developer for developer in nordev
-</pre>
-        <p>compiles to</p>
-<pre>
-var friend, _i, _len;
-
-for (_i = 0, _len = nordev.length; _i < _len; _i++) {
-  developer = nordev[_i];
-  makeCoffeeFor(developer);
-}
-</pre>
-        <ul>
-          <li>for loops can now be on one line</li>
-          <li>tidy memorable syntax</li>
-          <li>easy json object traversal</li>
-        </ul>
+        <h2>April 2012</h2>
+        <h3>SASS In the real world - Tom Crinson</h3>
+        <p>Why write CSS like a caveman? SASS gives you more flexibility and you dry up your CSS like any other code</p>
       </section>
       <section>
-        <h2>iterations of objects</h2>
-<pre>
-makeCoffee type for type of coffee
-</pre>
-        <p>compiles to</p>
-<pre>
-var type;
-
-for (type in coffee) {
-  makeCoffee(type);
-}
-</pre>
+        <h2>May 2012</h2>
+        <h3>App in a box(Twitter bootstrap) - Anders Fisher</h3>
+        <p>Anders Doesn't like bootstrap, sort of</p>
+        <h3>#ff0000, #ffffff &amp; #0000ff - David Kirkby</h3>
+        <p>The colours you choose affect and effect your users, look to other media for inspiration.</p>
       </section>
       <section>
-          <h2>useful new features</h2>
-<pre>
-console.log index for index in [1..10]
-"two plus three 
-is #{2+3}"
-</pre>
-<p>Compiles to</p>
-<pre>
-var index, _i;
-
-for (index = _i = 1; _i <= 10; index = ++_i) {
-  console.log(index);
-}
-
-"two plus three is " + (2 + 3);
-</pre>
-          <ul>
-            <li>ranges</li>
-            <li>string interpolation</li>
-            <li>multi line strings</li>
-          </ul>
-      </section>
-
-      <section>
-        <h2>tidy build code</h2>
-        <pre>
-          npm install coffeescript
-          coffee -wc app.coffee
-        </pre>
-        <ul>
-          <li>node/commandline</li>
-          <li>rails</li>
-          <li>in the browser</li>
-          <li>join into one Coffeescript file</li>
-          <li>Visual Studio plugin -> Web workbench</li>
-        </ul>
+        <h2>June 2012</h2>
+        <h3>If I were U (X) - Max Shelley</h3>
+        <p>by thinking about UX throughout your development process you can build a better product.</p>
+        <h3>Coffeescript is for ... - Anders Fisher</h3>
+        <p>Anders likes coffeescript, and you can use it anywhere.</p>
       </section>
       <section>
-        <h2>wherever you use Javascript</h2>
-        <ul>
-          <li>websites</li>
-          <li>web apps</li>
-          <li>node</li>
-          <li>phonegap</li>
-          <li>browser extensions</li>
-          <li>Dashcode projects</li>
-          <li>spotify apps</li>
-        </ul>
+        <h2>July 2012</h2>
+        <h3>Colour / Accessibility - Karl Dawson</h3>
+        <p>there are specified rules around colour contrasts, by applying them you help all your users not only the visually impared</p>
+        <h3>Outer Empires - Paul Hutson</h3>
+        <p>Paul can talk on the fly and in outer empires Paul has shown you can build a huge following with a bit of elbow grease and passion.</p>
       </section>
       <section>
-        <h2>Behavior Driven Development</h2>
-<pre>
-example = 
-  coffee:"script"
-  is:"easy"
-
-expectation = 
-  coffee:"script"
-  is:"easy"
-
-describe "coffeescript", ->
-  it "is tidy and in plain english", ->
-    (expect example).toMatch expectation
-</pre>
-        <ul>
-          <li>Using Jasmine leads to plain english tests</li>
-          <li>Simple syntax encourages discussion with folk who dont code</li>
-          <li>The tests become specification/documentation</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Object Orientated Programming</h2>
-<pre>
-class Coffee
-  constructor: (@name) ->
-  serve: () -> alert "#{@name} is ready"
-
-class Capuccino extends Coffee
-  serve: ->
-    alert "frothy goodness"
-    super
-
-class Mocha extends Coffee
-  serve: () ->
-    alert "choclatey goodness"
-    super
-
-drink1 = new Capuccino
-drink2 = new Mocha
-drink1.serve()
-drink2.serve()
-</pre>
-      </section>      
-
-      <section>
-        <h2>Object Orientated Programming</h2>
-<pre>
-var Capuccino, Coffee, Mocha, drink1, drink2,
-  __hasProp = {}.hasOwnProperty,
-  __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
-
-Coffee = (function() {
-
-  function Coffee(name) {
-    this.name = name;
-  }
-
-  Coffee.prototype.serve = function() {
-    return alert(this.name + " is ready");
-  };
-
-  return Coffee;
-
-})();
-
-Capuccino = (function(_super) {
-
-  __extends(Capuccino, _super);
-
-  function Capuccino() {
-    return Capuccino.__super__.constructor.apply(this, arguments);
-  }
-
-  Capuccino.prototype.serve = function() {
-    alert("frothy goodness");
-    return Capuccino.__super__.serve.apply(this, arguments);
-  };
-
-  return Capuccino;
-
-})(Coffee);
-
-Mocha = (function(_super) {
-
-  __extends(Mocha, _super);
-
-  function Mocha() {
-    return Mocha.__super__.constructor.apply(this, arguments);
-  }
-
-  Mocha.prototype.serve = function() {
-    alert("choclatey goodness");
-    return Mocha.__super__.serve.apply(this, arguments);
-  };
-
-  return Mocha;
-
-})(Coffee);
-
-drink1 = new Capuccino;
-
-drink2 = new Mocha;
-
-drink1.serve();
-
-drink2.serve();
-</pre>
-      </section>
-      
-      <section>
-        <h2>Object Orientated Programming</h2>
-        <ul>
-          <li>class, extends, super and new</li>
-          <li>more familiar than prototypical inheritance</li>
-          <li>very tidily encapsulated</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>managable encapsulation and scope</h2>
-<pre>
-Account = (@customer, @coffee) ->
-  $('.coffee_button').click (event) =>
-    @customer.purchase @coffee
-</pre>
-        <p>compiles to</p>
-<pre>
-var Account;
-
-Account = function(customer, coffee) {
-  var _this = this;
-  this.customer = customer;
-  this.coffee = coffee;
-  return $('.coffee_button').click(function(event) {
-    return _this.customer.purchase(_this.coffee);
-  });
-};
-</pre>
-      </section>
-
-      <section>
-        <h2>managable encapsulation and scope</h2>
-        <ul>
-          <li>@ refers to this or this.</li>
-          <li>-> makes use of a standard function with the scope passing to wherever the function is called</li>
-          <li>=> makes use of bind keeping the scope to where the function is instantiated</li>
-          <li>Every coffeescript file is encapsulated within a function call</li>
-          <li>no need to use var keyword coffeescript declares variables at their highest instance scope</li>
-          <li>anything external to the file needs to be bound to a global variable such as window or exports</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>jQuery</h2>
-        <ul>
-          <li>jQuery can lead to callback hell</li>
-          <li>using CoffeeScript's objects help tidy things up</li>
-          <li>jQuery remains just as powerful</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>jQuery</h2>
-<pre>
-class Clickable
-  constructor: (@element)->
-    @element.click @click
-  click: =>
-    alert @element.html()
-
-$ -> clickable = new Clickable $ 'pre'
-</pre>
-        <p>compiles to...</p>
-      </section>
-
-      <section>
-        <h2>jQuery</h2>
-<pre>
-var Clickable;
-
-Clickable = (function() {
-  function Clickable(element) {
-    this.element = element;
-    this.element.click(this.click);
-  }
-  Clickable.prototype.click = function() {
-    return alert(this.element.html());
-  };
-  return Clickable;
-})();
-
-$(function() {
-  var clickable;
-  return clickable = new Clickable($('pre'));
-});
-</pre>
-      </section>
-
-      <section>
-        <h2>tidy code</h2>
-        <ul>
-          <li>json</li>
-          <li>encourages less spaghetti code</li>
-          <li>indentation makes it clear you are going awry</li>
-          <li>per file encapsulation</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>learning</h2>
-        <ul>
-          <li>compiled coffeescript is good javascript</li>
-          <li>js lint compatible</li>
-          <li>makes you think of js environments as &ldquo;proper code&rdquo;</li>
-          <li>encourages OOP</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>your brain</h2>
-          <ul>
-            <li>always returns last line of a function</li>
-            <li>semantic keywords and simple syntax exposes the logic of your code</li>
-            <li>bdd with jasmine</li>
-            <li>OOP is a lot easier</li>
-            <li>reading compiled code encourages smaller functions.</li>
-          </ul>
+        <h2>August 2012</h2>
+        <h3>MV* Frameworks - Kerry Buckley</h3>
+        <p>there are a lot of MV* frameworks, its tough to choose!</p>
+        <h3>HTML5 Web Workers - Steve Butterworth</h3>
+        <p>Steve needs a bit more of a push from his front end apps, Webworkers gives him a</p> great way to get that extra power!</p>
       </section>
       <section>
-        <h2>... A Talk.</h2>
-<pre style='height:500px; overflow-y:scroll;'>
-class App
-  constructor: ->
-    @position = 0
-    @sections = $('section')
-    @setBackground section for section in @sections
-    @displaySections()
-    $(window).keypress @keypress
-
-  displaySections: ->
-    $(section).hide() for section in @sections
-    $(@sections[@position]).show()
-
-  randomrgb: -> "rgb(#{@roundom 180 },#{@roundom 180 },#{@roundom 180 })"
-
-  roundom: (int)-> Math.ceil Math.random()*int
-  
-  setBackground: (section)-> $(section).css "background-color" : @randomrgb()
-
-  keypress: (event)=>
-    if event.keyCode is 32
-      @changeSection 1
-    else
-      @changeSection -1
-
-  normalizePosition: ->
-    @position = 0 if @position is @sections.length
-    @position = @sections.length if @position < 0
-
-  changeSection: (modifier)->
-    @position += modifier
-    @normalizePosition()
-    @displaySections()
-
-$ -> window.app = new App
-</pre>
+        <h2>September 2012</h2>
+        <h3>Social (@ the tap)</h3>
+        <p>beer is good.</p>
       </section>
       <section>
-        <h2>you?</h2>
-        <ul>
-          <li>Questions?</li>
-          <li>@FESuffolk</li>
-          <li>@atleastimtrying</li>
-          <li>anders@js-dev.co.uk</li>
-        </ul>
+        <h2>November 2012</h2>
+        <h3>Pub Sub - Anders Fisher</h3>
+        <p>Anders loves Pub Sub, we can emulate the behviors of the browser for our own nefarious schemes</p>
+      </section>
+      <section>
+        <h2>December 2012</h2>
+        <h3>Xmas Drinks</h3>
+        <p>Christmas is great excuse for beer</p>
+      </section>
+      <section>
+        <h2>January 2013</h2>
+        <h3>D3js - Steve Butterworth</h3>
+        <p>D3 is complex but it can produce some beautiful effects.</p>
+        <h3>Monads - Sean Dunn</h3>
+        <p>Performing a talk while high on painkillers is tough, Once you understand a monad</p> you can't describe it!</p>
+      </section>
+      <section>
+        <h2>Feb 2013 - We moved to UCS</h2>
+      </section>
+      <section>
+        <h2>February 2013</h2>
+        <h3>CSS Refactoring - Anders Fisher</h3>
+        <p>revisiting your CSS to improve your structure and legibility is a worthwhile task, no matter how frustrating it may be!</p>
+        <h3>A Kinetic Canvas - Paul Hutson</h3>
+        <p>Kinetic JS gives you a great toolkit for building games in the browser, Paul has</p> used it for Outer Empires</p>
+      </section>
+      <section>
+        <h2>March 2013</h2>
+        (Lightning Talks)
+        <h3>Adventures with YUI - Robin Meehan</h3>
+        <p>YUI is a great alternative for quick UI building</p>
+        <h3>Cool Canvas Effects in 5 minutes - Matthew Bennett</h3>
+        <p>Matt can turn around a pretty if random animation using the pure canvas api</p>
+        <h3>Love to Hate links - Karl Dawson</h3>
+        <p>Link Visited Hover Active remember that order!</p>
+        <h3>Jasmine - Kerry Buckley</h3>
+        <p>You can do BDD with JS!</p>
+        <h3>Local Storage - Anders Fisher</h3>
+        <p>Local storage has ha handy API and lets you persist in the browser. use JSON!</p>
+        <h3>5 projects in 5 minute - Ross Scrivener</h3>
+        <p>Ross is a busy and creative chap!</p>
+        <h3>Make - Sean Dunn</h3>
+        <p>Sean uses make to compile his projects, its easily configured and is installed everywhere!</p>
+      </section>
+      <section>
+        <h2>April 2013</h2>
+        <h3>Building Hacked - Leeky</h3>
+        <p>creating a huge conference required some serious thoughts about design and branding, by knowing your audience you can gain inspiration from them.</p>
+        <h3>Morein.fo - Paul Hutson</h3>
+        <p>the internet is a fascinating place, by tracking links or </p>
+      </section>
+      <section>
+        <h2>May 2013</h2>
+        <h3>Cinema 4D and Unity - David Kirkby</h3>
+        <p>getting 3d models together and online is achievable, Dave managed to get his companion cube into a 3d game environment in the space of a talk</p>
+        <h3>Javascript without jQuery - Anders Fisher</h3>
+        <p>sometimes you don't need jquery, modern browsers are more consistent and have handy dandy apis</p>
+      </section>
+      <section>
+        <h2>June 2013</h2>
+        <h3>Codeschool Special - Jason Van lue</h3>
+        <p>pizza brings all the devs to the yard, the codeschool guys know what they're doing when it comes to front end development!</p>
+      </section>
+      <section>
+        <h2>July 2013</h2>
+        <h3>Titanium - Paul Hutson</h3>
+        <p>make mobile apps with JS! Paul showed us how rich and capable the titanium environment is, and how flexible JS can be outside the browser.</p>
+        <h3>Responsive Design - Anders Fisher</h3>
+        <p>There's more to responsive design than media queries, build your components to be as flexible as possible and it'll make life easier.</p>
+      </section>
+      <section>
+        <h2>August 2013</h2>
+        <h3>Node.js - Richard Astbury</h3>
+        <p>node is super quick to get started with, it's also nice to get a handle on for JS  users, the ecosystem has matured very quickly.</p>
+        <h3>Conversion Testing - Ross Scrivener</h3>
+        <p>There are load of ways to test how your users behave, by focusing on your own conversion goals you get a clearer picture of how your business is doing.</p>
+      </section>
+      <section>
+        <h2>September 2013</h2>
+        <h3>Social at the Kai Bar</h3>
+      </section>
+      <section>
+        <h2>October 2013</h2>
+        <h3>Fun With Forms - Anders Fisher</h3>
+        <p>forms don't need to be dull, they are the core of the internet so why not jazz them up with CSS/JS/Checkbox hack</p>
+        <h3>25 Js Libraries you may not know about - Steve Butterworth</h3>
+        <p>Steve likes big numbers, there are a huge amount of js libraries, ask steve.</p>
+      </section>
+      <section>
+        <h2>November 2013</h2>
+        <h3>What are you true colours - Paul Hutson</h3>
+        <p>Paul managed to get a quick and useful application together in a weekend with a clever approach to personalising parliament data.</p>
+        <h3>Responsive Design in Wordpress - Max Shelley</h3>
+        <p>Max reminded us all that responsive design isn't always purely a developer's choice, getting buy in from the customer is paramount.</p>
+      </section>
+      <section>
+        <h2>December 2013</h2>
+        <h3>Meal + Quiz</h3>
+        <p>We like food, and quizzes can be fun.</p>
+      </section>
+      <section>
+        <h2>January 2014</h2>
+        <h3>Portfolio Website Design - Chris Filip</h3>
+        <p>chris showed us how his portfolio came about from a process of research and experimentation.</p>
+        <h3>Behind the Scenes of Drag the Dots - Anders Fisher</h3>
+        <p>Drag the dots is a simple premise sitting at the core of an increasingly complex codebase also phonegap is awesome.</p>
+      </section>
+      <section>
+        <h2>February 2014</h2>
+        <h3>Duckie - Anders Fisher + Matthew Bennett</h3>
+        <p>Anders and Matt are weird, they like coffeescript and making fun stuff.</p>
+        <h3>Tarsus Configurator - Toby Hope</h3>
+        <p>Toby gave us an excellent showcase of using phonegap and angular to create an efficient and repeatable piece of software for mobile devices.</p>
+        <h3>Automating Android with JS - Carl Farmer</h3>
+        <p>Carl gave us some handy life tips, and some proof that microsoft aren't afraid of exploring android territory!</p>
+      </section>
+      <section>
+        <h2>March 2014</h2>
+        <h3>Introduction to Golang - Elliot Stoneham</h3>
+        <p>Go is an elegant low level language which was written based on the learning from a variety of other languages.</p>
+        <h3>JS Structure - Anders Fisher</h3>
+        <p>Anders Writes lots of javascript, he also tries to build them into a modular event driven framework that is flexible and re-usable.</p>
+      </section>
+      <section>
+        <h2>April 2014</h2>
+        <h3>Android Script - David Hurren</h3>
+        <p>AndroidScript is an interesting tool to create android apps on android devices using JS, for a one man team this language has travelled a great deal.</p>
+        <h3>GeoJSON - Paul Hutson</h3>
+        <p>If you're dealing with mapping data including lat-lng groupings and boundaries, use GeoJSON</p>
+      </section>
+      <section>
+        <h2>May 2014</h2>
+        <h3>Three JS - David Kirkby</h3>
+        <p>Dave isn't limited to unity, Dave returned to show us how he turned how fantastical three d models into accessible interactive pieces using three js. </p>
+        <h3>CSS3 Animation - Steve Butterworth</h3>
+        <p>Steve showed us the crazy flashy things you can do with CSS3, if you're about to write some logic for animation in JS for a modern browser, take a look at CSS3 animations.</p>
+      </section>
+      <section>
+        <h2>June 2014</h2>
+        <h3>Make Paper - Matthew Applegate</h3>
+        <p>We got to see the insides of Make paper and some proof that a great idea should always be at the core of any project and can drive people to make things they hadn't thought of before.</p>
+        <h3>Introduction to Sinatra - Anders Fisher</h3>
+        <p>Sinatra is a teeny tiny ruby langauge that givesy ou convenient routing methods and you can achieve a great deal without reams and reams of code.</p>
+
+      </section>
+      <section>
+        <h2>July 2014</h2>
+        <h3>OpenStreetMap - Shaun Macdonald</h3>
+        <p>Open Streetmap is a huge project providing truely open data to the public, if you need information on a region, OSM can give you impartial access to incredible detail.</p>
+        <h3>BEM + LESS - Karl Dawson</h3>
+        <p>BEM gives you a clear pattern to follow when structuring your CSS/SASS Karl follows it in his projects and has had great success with it.</p>
+      </section>
+      <section>
+        <h2>August 2014</h2>
+        <h3>Sails js - Tom Chinery</h3>
+        <p>sails is like rails but for node.</p>
+        <h3>Big Software in small pieces - Adam Whittingham</h3>
+        <p>breaks code into tiny testable applications, connect it up with events so that you can test elements in isolation.</p>
+      </section>
+      <section>
+        <h2>September 2014</h2>
+        <h3>Promises JS - Sean Dunn</h3>
+        <p>promises can help tidy up your async code and give you a more expressive way to structure your js.</p>
+        <h3>Mustache templating - Anders Fisher</h3>
+        <p>Mustache JS is a super simple library that you can use for client side templating</p>
+      </section>
+      <section>
+        <h2>October 2014</h2>
+        <h3>Geek Mental Health - Robert Lee Cann</h3>
+        <p>Mental health is a real issue, impostor syndrome is not only real but common, remember people only tell you when they are winning.</p>
+        <h3>TDD Mocks + Stubs - Kerry Buckley</h3>
+        <p>Mocks and Stubs allow you to seperate yoru codebase from your database, and keep your concerns under control. Mocks allow you to replace real functions with pretend ones, stubs allow you to return defined data from external processes.</p>
+      </section>
+      <section>
+        <h2>November 2014</h2>
+        <h3>After the Code - Adam Whittingham</h3>
+        <p>Managing your own server is an achieveable goal, services like heroku are useful but expensive.</p>
+        <h3>Meta Talk - Anders Fisher</h3>
+        <p>anders has looked thorugh all the talks, there have been loads of them, mostly him talking about js.</p>
       </section>
     </article>
     <script src='jquery.js'></script>

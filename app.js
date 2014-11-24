@@ -29,7 +29,7 @@
     };
 
     App.prototype.randomhsla = function() {
-      return "hsla(" + (this.roundom(360)) + ",80%,30%, 1)";
+      return "hsla(" + (this.roundom(360)) + ",30%,90%, 1)";
     };
 
     App.prototype.roundom = function(int) {
@@ -43,6 +43,7 @@
     };
 
     App.prototype.keypress = function(event) {
+      event.preventDefault();
       if (event.keyCode === 32) {
         return this.changeSection(1);
       } else {
