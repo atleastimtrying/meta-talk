@@ -1,0 +1,451 @@
+
+<!doctype html>  
+<html>
+  <head>
+    <title>Coffeescript is for </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  </head>
+  <body>
+    <header>
+      <h1>CoffeeScript is for </h1>
+    </header>
+    <article>
+      <section>
+        <h2>...</h2>
+        <ul>
+          <li>Anders Fisher 2014</li>
+        </ul>
+      </section>
+      <section>
+        <h2>a modern JS</h2>
+        <ul>
+          <li>Invented in 2009</li>
+          <li>Open source</li>
+          <li>Compiles to Javascript</li>
+          <li>Runs on node/ in the browser</li>
+          <li>Semantic Whitespace</li>
+          <li>Ruby like syntax</li>
+        </ul>
+      </section>
+      <section>
+        <h2>functions</h2>
+<pre>
+helloWorld = -> 
+  alert "hello world!"
+
+helloWorld()
+</pre>
+          <p>compiles to</p>
+<pre>
+var helloWorld;
+
+helloWorld = function() {
+  return alert("hello world!");
+};
+
+helloWorld();
+</pre>
+      </section>
+      <section>
+        <h2>functions</h2>
+        <ul>
+          <li>-> replaces function()</li>
+          <li>(argument)-> replaces function(argument)</li>
+          <li>functions can be single or multiline.</li>
+          <li>when calling functions brackets can be omitted (most of the time).</li>
+          <li>{} are ignored in favour of indentation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>useful conditionals</h2>
+<pre>
+drinkCoffee() if anders is sleepy
+
+coffeeIsWarm = cold > coffeetemp > hot
+
+</pre>
+        <p>compiles to</p>
+<pre>
+var coffeeIsWarm;
+
+if (anders === sleepy) {
+  drinkCoffee();
+}
+
+coffeeIsWarm = (cold > coffeetemp && coffeetemp > hot);
+</pre>
+        <ul>
+          <li>if and unless allow one line statements.</li>
+          <li>conditions can be chained</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>iterations</h2>
+<pre>
+makeCoffeeFor developer for developer in nordev
+</pre>
+        <p>compiles to</p>
+<pre>
+var friend, _i, _len;
+
+for (_i = 0, _len = nordev.length; _i < _len; _i++) {
+  developer = nordev[_i];
+  makeCoffeeFor(developer);
+}
+</pre>
+        <ul>
+          <li>for loops can now be on one line</li>
+          <li>tidy memorable syntax</li>
+          <li>easy json object traversal</li>
+        </ul>
+      </section>
+      <section>
+        <h2>iterations of objects</h2>
+<pre>
+makeCoffee type for type of coffee
+</pre>
+        <p>compiles to</p>
+<pre>
+var type;
+
+for (type in coffee) {
+  makeCoffee(type);
+}
+</pre>
+      </section>
+      <section>
+          <h2>useful new features</h2>
+<pre>
+console.log index for index in [1..10]
+"two plus three 
+is #{2+3}"
+</pre>
+<p>Compiles to</p>
+<pre>
+var index, _i;
+
+for (index = _i = 1; _i <= 10; index = ++_i) {
+  console.log(index);
+}
+
+"two plus three is " + (2 + 3);
+</pre>
+          <ul>
+            <li>ranges</li>
+            <li>string interpolation</li>
+            <li>multi line strings</li>
+          </ul>
+      </section>
+
+      <section>
+        <h2>tidy build code</h2>
+        <pre>
+          npm install coffeescript
+          coffee -wc app.coffee
+        </pre>
+        <ul>
+          <li>node/commandline</li>
+          <li>rails</li>
+          <li>in the browser</li>
+          <li>join into one Coffeescript file</li>
+          <li>Visual Studio plugin -> Web workbench</li>
+        </ul>
+      </section>
+      <section>
+        <h2>wherever you use Javascript</h2>
+        <ul>
+          <li>websites</li>
+          <li>web apps</li>
+          <li>node</li>
+          <li>phonegap</li>
+          <li>browser extensions</li>
+          <li>Dashcode projects</li>
+          <li>spotify apps</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Behavior Driven Development</h2>
+<pre>
+example = 
+  coffee:"script"
+  is:"easy"
+
+expectation = 
+  coffee:"script"
+  is:"easy"
+
+describe "coffeescript", ->
+  it "is tidy and in plain english", ->
+    (expect example).toMatch expectation
+</pre>
+        <ul>
+          <li>Using Jasmine leads to plain english tests</li>
+          <li>Simple syntax encourages discussion with folk who dont code</li>
+          <li>The tests become specification/documentation</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Object Orientated Programming</h2>
+<pre>
+class Coffee
+  constructor: (@name) ->
+  serve: () -> alert "#{@name} is ready"
+
+class Capuccino extends Coffee
+  serve: ->
+    alert "frothy goodness"
+    super
+
+class Mocha extends Coffee
+  serve: () ->
+    alert "choclatey goodness"
+    super
+
+drink1 = new Capuccino
+drink2 = new Mocha
+drink1.serve()
+drink2.serve()
+</pre>
+      </section>      
+
+      <section>
+        <h2>Object Orientated Programming</h2>
+<pre>
+var Capuccino, Coffee, Mocha, drink1, drink2,
+  __hasProp = {}.hasOwnProperty,
+  __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+Coffee = (function() {
+
+  function Coffee(name) {
+    this.name = name;
+  }
+
+  Coffee.prototype.serve = function() {
+    return alert(this.name + " is ready");
+  };
+
+  return Coffee;
+
+})();
+
+Capuccino = (function(_super) {
+
+  __extends(Capuccino, _super);
+
+  function Capuccino() {
+    return Capuccino.__super__.constructor.apply(this, arguments);
+  }
+
+  Capuccino.prototype.serve = function() {
+    alert("frothy goodness");
+    return Capuccino.__super__.serve.apply(this, arguments);
+  };
+
+  return Capuccino;
+
+})(Coffee);
+
+Mocha = (function(_super) {
+
+  __extends(Mocha, _super);
+
+  function Mocha() {
+    return Mocha.__super__.constructor.apply(this, arguments);
+  }
+
+  Mocha.prototype.serve = function() {
+    alert("choclatey goodness");
+    return Mocha.__super__.serve.apply(this, arguments);
+  };
+
+  return Mocha;
+
+})(Coffee);
+
+drink1 = new Capuccino;
+
+drink2 = new Mocha;
+
+drink1.serve();
+
+drink2.serve();
+</pre>
+      </section>
+      
+      <section>
+        <h2>Object Orientated Programming</h2>
+        <ul>
+          <li>class, extends, super and new</li>
+          <li>more familiar than prototypical inheritance</li>
+          <li>very tidily encapsulated</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>managable encapsulation and scope</h2>
+<pre>
+Account = (@customer, @coffee) ->
+  $('.coffee_button').click (event) =>
+    @customer.purchase @coffee
+</pre>
+        <p>compiles to</p>
+<pre>
+var Account;
+
+Account = function(customer, coffee) {
+  var _this = this;
+  this.customer = customer;
+  this.coffee = coffee;
+  return $('.coffee_button').click(function(event) {
+    return _this.customer.purchase(_this.coffee);
+  });
+};
+</pre>
+      </section>
+
+      <section>
+        <h2>managable encapsulation and scope</h2>
+        <ul>
+          <li>@ refers to this or this.</li>
+          <li>-> makes use of a standard function with the scope passing to wherever the function is called</li>
+          <li>=> makes use of bind keeping the scope to where the function is instantiated</li>
+          <li>Every coffeescript file is encapsulated within a function call</li>
+          <li>no need to use var keyword coffeescript declares variables at their highest instance scope</li>
+          <li>anything external to the file needs to be bound to a global variable such as window or exports</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>jQuery</h2>
+        <ul>
+          <li>jQuery can lead to callback hell</li>
+          <li>using CoffeeScript's objects help tidy things up</li>
+          <li>jQuery remains just as powerful</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>jQuery</h2>
+<pre>
+class Clickable
+  constructor: (@element)->
+    @element.click @click
+  click: =>
+    alert @element.html()
+
+$ -> clickable = new Clickable $ 'pre'
+</pre>
+        <p>compiles to...</p>
+      </section>
+
+      <section>
+        <h2>jQuery</h2>
+<pre>
+var Clickable;
+
+Clickable = (function() {
+  function Clickable(element) {
+    this.element = element;
+    this.element.click(this.click);
+  }
+  Clickable.prototype.click = function() {
+    return alert(this.element.html());
+  };
+  return Clickable;
+})();
+
+$(function() {
+  var clickable;
+  return clickable = new Clickable($('pre'));
+});
+</pre>
+      </section>
+
+      <section>
+        <h2>tidy code</h2>
+        <ul>
+          <li>json</li>
+          <li>encourages less spaghetti code</li>
+          <li>indentation makes it clear you are going awry</li>
+          <li>per file encapsulation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>learning</h2>
+        <ul>
+          <li>compiled coffeescript is good javascript</li>
+          <li>js lint compatible</li>
+          <li>makes you think of js environments as &ldquo;proper code&rdquo;</li>
+          <li>encourages OOP</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>your brain</h2>
+          <ul>
+            <li>always returns last line of a function</li>
+            <li>semantic keywords and simple syntax exposes the logic of your code</li>
+            <li>bdd with jasmine</li>
+            <li>OOP is a lot easier</li>
+            <li>reading compiled code encourages smaller functions.</li>
+          </ul>
+      </section>
+      <section>
+        <h2>... A Talk.</h2>
+<pre style='height:500px; overflow-y:scroll;'>
+class App
+  constructor: ->
+    @position = 0
+    @sections = $('section')
+    @setBackground section for section in @sections
+    @displaySections()
+    $(window).keypress @keypress
+
+  displaySections: ->
+    $(section).hide() for section in @sections
+    $(@sections[@position]).show()
+
+  randomrgb: -> "rgb(#{@roundom 180 },#{@roundom 180 },#{@roundom 180 })"
+
+  roundom: (int)-> Math.ceil Math.random()*int
+  
+  setBackground: (section)-> $(section).css "background-color" : @randomrgb()
+
+  keypress: (event)=>
+    if event.keyCode is 32
+      @changeSection 1
+    else
+      @changeSection -1
+
+  normalizePosition: ->
+    @position = 0 if @position is @sections.length
+    @position = @sections.length if @position < 0
+
+  changeSection: (modifier)->
+    @position += modifier
+    @normalizePosition()
+    @displaySections()
+
+$ -> window.app = new App
+</pre>
+      </section>
+      <section>
+        <h2>you?</h2>
+        <ul>
+          <li>Questions?</li>
+          <li>@FESuffolk</li>
+          <li>@atleastimtrying</li>
+          <li>anders@js-dev.co.uk</li>
+        </ul>
+      </section>
+    </article>
+    <script src='jquery.js'></script>
+    <script src="app.js"></script>
+  </body>
+</html>
